@@ -1,0 +1,38 @@
+name: Bug report
+description: Something in Gemstone broke or looks wrong.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping fix Gemstone! If you used the in-game button, most of this is filled in already.
+        Your GitHub username will be public on this issue. Please don't include personal information.
+        To add a screenshot, drag it into the box below.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you were doing, and what went wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: "1. ...\n2. ...\n3. ..."
+  - type: input
+    id: version
+    attributes:
+      label: Game version
+      placeholder: "e.g. 26.11.1918"
+  - type: textarea
+    id: specs
+    attributes:
+      label: System and report details
+      description: Filled in by the game when you use the in-game button. The full log is in your Gemstone "Bug Reports" folder.
+      render: text
